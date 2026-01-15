@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router';
-import { HomePage} from './pages/HomePage';
+import { HomePage } from './pages/HomePage';
+import { CheckoutPage } from './pages/CheckoutPage';
 import './App.css'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <Routes>
       {/* Shortcuts instead for wrting path="/" React router has prop called index it work the same way as path="/" */}
       <Route index element={<HomePage />} />
-      <Route path="checkout" element={<div>Projects</div>} />
+      <Route path="checkout" element={<CheckoutPage/>} />
     </Routes>
   );
 }
